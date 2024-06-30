@@ -378,6 +378,27 @@ header {
     margin-top: 16px;
 }
 
+.managementBox {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 32px 90px;
+    display: flex;
+}
+
+.managementBox div h3 {
+    margin-bottom: 16px;
+}
+
+.managementBox div p {
+    margin-top: 16px;
+    line-height: 1.5;
+}
+
+.managementBox div p:first-of-type {
+    font-weight: bold;
+}
+
+
 
 footer {
     box-sizing: border-box;

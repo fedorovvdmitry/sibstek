@@ -22,6 +22,8 @@
     }
 
     .popupMenu {
+        box-sizing: border-box;
+        width: 100%;
         top: 80px;
         right: 0;
     }
@@ -59,6 +61,34 @@
     .historyContent, .historyPhoto {
         width: 100%;
         margin-top: 32px;
+    }
+    
+    .aboutCompanyBox {
+        padding: 32px 20px;
+        flex-direction: column-reverse;
+    }
+
+    .aboutCompanyItem {
+        width: 100%;
+    }
+
+    .aboutCompanyItem:first-child {
+        margin-top: 32px;
+    }
+    
+    .associationsBox, .managementBox {
+        padding: 32px 20px;
+    }
+
+    .associationsItems, .managementBox {
+        flex-direction: column;
+    }
+
+    .associationsItemsImg {
+        width: 50vw;
+        height: 50vw;
+        margin-right: 0;
+        margin-bottom: 16px;
     }
 
 }
