@@ -1,0 +1,401 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a {
+    color: #0E6ECF;
+}
+
+b {
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 32px 0 16px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 0 90px;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+
+}
+
+.headerLogo {
+    display: inline-flex;
+}
+
+.headerlogoRATM, .headerlogoSibstek {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 80px;
+}
+
+.headerlogoRATM {
+    background-image: url(../images/logo_ratm.svg);
+    width: 80px;
+}
+
+.headerlogoSibstek {
+    background-image: url(../images/logo-sibirskoe-steklo.png);
+    width: 150px;
+}
+
+.presentation {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.pdfIcon {
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/icon_file.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+
+.presentation a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popupMenu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+}
+
+.popupMenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popupMenu li {
+    margin-bottom: 10px;
+}
+
+.popupMenu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.popupMenu a:hover {
+    color: #007bff;
+}
+
+.menuButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.menuButton:hover {
+    background-color: #0056b3;
+}
+
+.menuButton:hover + .popupMenu {
+    display: block;
+}
+
+.notification {
+    margin-top: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #eaf0f9;
+    padding: 32px 90px;
+}
+
+.notification a {
+    text-decoration: none;
+}
+
+.notification .notificationText:first-child {
+    font-weight: 600;
+}
+
+.notification p+p {
+    margin-top: 16px;
+}
+
+.notificationText {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.aboutCover {
+    width: 100%;
+    height: 70vh;
+    box-sizing: border-box;
+    background-image: url(../images/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: inline-flex;
+}
+
+.aboutCover div:nth-of-type(2) {
+    background-color: rgb(1, 91, 201, 70%);
+}
+
+.aboutCoverItem {
+    box-sizing: border-box;
+    padding: 32px 90px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.aboutCoverItemP {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.aboutCoverItem li {
+    position: relative
+}
+
+.aboutCoverItem li+li {
+    margin-top: 16px;
+}
+
+.aboutCoverItem li::before {
+    position: absolute;
+    top: 0;
+    left: -32px;
+    content: ' ';
+    width: 15px;
+    height: 15px;
+    background-color: white;
+}
+
+.header-with-blue-line {
+    box-sizing: border-box;
+    margin: 32px 90px 0;
+}
+
+.heading {
+    color: #333333;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 13px;
+    border-bottom: 2px solid #0074e8;
+}
+
+.historyContaner ul {
+    margin-bottom: 32px;
+}
+
+.historyContaner {
+    box-sizing: border-box;
+    padding: 32px 90px;
+    display: flex;
+}
+
+.historyContent {
+    width: 50%;
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+
+.historyContaner li {
+    position: relative
+}
+
+.historyContaner li::before {
+    position: absolute;
+    top: 4px;
+    left: -16px;
+    content: ' ';
+    width: 8px;
+    height: 8px;
+    background-color: #0074e8;
+}
+
+.historyContaner li+li {
+    margin-top: 16px;
+}
+
+.historyContaner p+p {
+    margin-top: 16px;
+}
+
+.historyContaner p+ul {
+    margin-top: 32px;
+}
+
+.historyPhoto {
+    box-sizing: border-box;
+    width: 50%;
+    overflow: hidden;
+    
+}
+
+.historyPhoto img {
+    width: 100%;
+}
+
+.historyPhoto img+img {
+    margin-top: 32px;
+}
+
+.aboutCompanyBox {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 32px 90px;
+    display: flex;
+}
+
+.aboutCompanyItem {
+    width: 50%;
+}
+
+.aboutCompanyItem:first-child {
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+
+.aboutCompanyItem div {
+    color: white;
+    padding: 16px;
+    background-color: #0056b3;
+}
+
+.aboutCompanyItem div+div{
+    margin-top: 16px;
+}
+
+.aboutCompanyItem div p:first-child {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.aboutCompanyItem p+p {
+    margin-top: 16px;
+}
+
+.aboutCompanyItem li {
+    position: relative;
+}
+
+.aboutCoverItem li+li {
+    margin-top: 16px;
+}
+
+.aboutCompanyItem li::before {
+    position: absolute;
+    top: 4px;
+    left: -16px;
+    content: ' ';
+    width: 8px;
+    height: 8px;
+    background-color: #0074e8;
+}
+
+.linkPresentation {
+    width: max-content;
+    text-decoration: none;
+    margin-top: 32px;
+    display: block;
+    border: 1px solid #0074e8;
+    border-radius: 2px;
+    padding: 8px 16px;
+}
+
+.linkPresentation:hover {
+    border: 1px solid #EF6416;
+    background-color: #EF6416;
+    color: white;
+}
+
+.associationsBox {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 32px 90px;
+}
+
+.associationsBox .associationsItems+.associationsItems {
+    margin-top: 32px;
+}
+
+.associationsItems {
+    display: inline-flex;
+}
+
+.associationsItemsImg {
+    width: 15vw;
+    height: 15vw;
+    margin-right: 32px;
+    border: 8px solid #EBECEC;
+}
+
+.associationsItems > div > p:first-of-type {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.associationsItems > div > p:nth-of-type(2) {
+    font-style: italic;
+    margin-top: 16px;
+}
+
+.associationsItems > div > p:nth-of-type(3) {
+    text-align: right;
+    font-style: italic;
+    margin-top: 16px;
+}
+
+
+footer {
+    box-sizing: border-box;
+    padding: 32px 90px;
+    margin-top: 106px;
+    background: #2c3649;
+    color: #969ba5;
+}
+
+.footerContent :first-child {
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: #969ba5;
+}
+
+footer a:hover {
+    color: white;
+}
