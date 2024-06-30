@@ -378,7 +378,7 @@ header {
     margin-top: 16px;
 }
 
-.managementBox {
+.managementBox, .manufactureBox {
     width: 100%;
     box-sizing: border-box;
     padding: 32px 90px;
@@ -398,7 +398,30 @@ header {
     font-weight: bold;
 }
 
+.manufactureBox {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.manufactureCard {
+    width: calc(25% - 16px);
+    margin-bottom: 16px;
+    color: white;
+    background-color: #0056b3;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.manufactureBoxText {
+    flex-basis: 100%;
+    margin: 16px 0 32px;
+}
+
+.manufactureBox div:nth-last-child(-n+3) {
+    background-color: #EBECEC;
+    color: black;
+    width: calc(33% - 16px);
+}
 
 footer {
     box-sizing: border-box;
