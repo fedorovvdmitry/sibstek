@@ -98,7 +98,9 @@
     footer,
     .developmentBox, 
     .natureBox,
-    .ecologyBox {
+    .ecologyBox,
+    .hrBox,
+    .recognitionBox {
         padding: 32px 20px;
     }
 
