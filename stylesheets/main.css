@@ -530,12 +530,28 @@ header {
     border-radius: 20px 20px 0 20px;
     background-color: white;
     color: #0056b3;
+    position: relative;
+}
+
+.recyclingGlassItem p {
+    margin-bottom: 16px;
+}
+
+.recyclingGlassItem::after {
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/arrow.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .recyclingGlassItem :first-child {
     font-size: 40px;
     font-weight: 800;
-    margin-bottom: 16px;
 }
 
 .startingContainer {

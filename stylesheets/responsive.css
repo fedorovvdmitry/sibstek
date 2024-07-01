@@ -39,6 +39,14 @@
     .notification {
         padding: 32px 20px;
     }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
     
     .aboutCoverItem li::before {
         width: 8px;
@@ -75,18 +83,18 @@
     }
 
     .historyContent,
-    .historyPhoto {
+    .historyPhoto,
+    .aboutCompanyItem {
         width: 100%;
+    }
+
+    .historyPhoto {
         margin-top: 32px;
     }
     
     .aboutCompanyBox {
         padding: 32px 20px;
         flex-direction: column-reverse;
-    }
-
-    .aboutCompanyItem {
-        width: 100%;
     }
 
     .aboutCompanyItem:first-child,
