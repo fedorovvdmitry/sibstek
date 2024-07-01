@@ -32,6 +32,10 @@
         display: none;
     }
 
+    .presentation p {
+        width: min-content;
+    }
+
     .notification {
         padding: 32px 20px;
     }
@@ -63,11 +67,14 @@
 
     .aboutCoverItemBox ul,
     .historyContaner ul, 
-    .aboutCompanyItem ul {
+    .aboutCompanyItem ul,
+    .natureBox ul,
+    .ecologyBox ul {
         margin-left: 16px;
     }
 
-    .historyContent, .historyPhoto {
+    .historyContent,
+    .historyPhoto {
         width: 100%;
         margin-top: 32px;
     }
@@ -88,7 +95,10 @@
     .associationsBox, 
     .managementBox, 
     .manufactureBox, 
-    footer {
+    footer,
+    .developmentBox, 
+    .natureBox,
+    .ecologyBox {
         padding: 32px 20px;
     }
 
@@ -106,7 +116,17 @@
 
     .manufactureBox div, .manufactureBox div:nth-last-child(-n+3) {
         width: 100%;
-
     }
 
+    .ecologyBoxRecyclingCards {
+        flex-direction: column;
+    }
+
+    .RecyclingItem {
+        width: 100%;
+    }
+
+    .RecyclingItem + .RecyclingItem {
+        margin-top: 16px;
+    }
 }

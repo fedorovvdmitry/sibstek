@@ -378,7 +378,8 @@ header {
     margin-top: 16px;
 }
 
-.managementBox, .manufactureBox {
+.managementBox,
+.manufactureBox {
     width: 100%;
     box-sizing: border-box;
     padding: 32px 90px;
@@ -420,6 +421,66 @@ header {
 .manufactureBox div:nth-last-child(-n+3) {
     background-color: #EBECEC;
     color: black;
+    width: calc(33% - 16px);
+}
+
+.developmentBox,
+.natureBox,
+.ecologyBox,
+.hrBox,
+.recognitionBox {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 32px 90px;
+}
+
+.natureBox ul,
+.ecologyBox ul {
+    margin: 16px 0;
+}
+
+.natureBox li,
+.ecologyBox li {
+    position: relative
+}
+
+.natureBox li+li,
+.ecologyBox ul li+li {
+    margin-top: 16px;
+}
+
+.natureBox li::before,
+.ecologyBox ul li::before {
+    position: absolute;
+    top: 4px;
+    left: -16px;
+    content: ' ';
+    width: 8px;
+    height: 8px;
+    background-color: #0074e8;
+}
+
+.ecologyBoxRecycling {
+    color: white;
+    background-color: #0056b3;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+}
+
+.RecyclingImg1 {
+    background-image: url(../images/);
+}
+
+.ecologyBoxRecyclingCards {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    margin-bottom: 16px;
+    border-bottom: 2px solid white;
+}
+
+.RecyclingItem {
     width: calc(33% - 16px);
 }
 
