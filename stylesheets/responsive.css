@@ -69,7 +69,8 @@
     .historyContaner ul, 
     .aboutCompanyItem ul,
     .natureBox ul,
-    .ecologyBox ul {
+    .ecologyBox ul,
+    .sorting ul {
         margin-left: 16px;
     }
 
@@ -88,7 +89,8 @@
         width: 100%;
     }
 
-    .aboutCompanyItem:first-child {
+    .aboutCompanyItem:first-child,
+    .recyclingGlassItem + .recyclingGlassItem {
         margin-top: 32px;
     }
     
@@ -100,12 +102,18 @@
     .natureBox,
     .ecologyBox,
     .hrBox,
-    .recognitionBox {
+    .recognitionBox,
+    .recyclingGlassBox,
+    .sorting {
         padding: 32px 20px;
     }
 
-    .associationsItems, .managementBox,
-    .manufactureBox {
+    .associationsItems, 
+    .managementBox,
+    .manufactureBox,
+    .ecologyBoxRecyclingCards,
+    .recyclingGlassBoxCards,
+    .startingContainer {
         flex-direction: column;
     }
 
@@ -116,19 +124,22 @@
         margin-bottom: 16px;
     }
 
-    .manufactureBox div, .manufactureBox div:nth-last-child(-n+3) {
-        width: 100%;
-    }
-
-    .ecologyBoxRecyclingCards {
-        flex-direction: column;
-    }
-
-    .RecyclingItem {
+    .manufactureBox div, 
+    .manufactureBox div:nth-last-child(-n+3),
+    .RecyclingItem,
+    .recyclingGlassItem,
+    .startingContainer div {
         width: 100%;
     }
 
     .RecyclingItem + .RecyclingItem {
         margin-top: 16px;
+    }
+
+    .RecyclingImg1,
+    .RecyclingImg2,
+    .RecyclingImg3 {
+        width: 20vw;
+        height: 20vw;
     }
 }

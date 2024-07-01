@@ -428,7 +428,8 @@ header {
 .natureBox,
 .ecologyBox,
 .hrBox,
-.recognitionBox {
+.recognitionBox,
+.sorting {
     width: 100%;
     box-sizing: border-box;
     padding: 32px 90px;
@@ -445,7 +446,8 @@ header {
 }
 
 .natureBox li+li,
-.ecologyBox ul li+li {
+.ecologyBox ul li+li,
+.sorting li {
     margin-top: 16px;
 }
 
@@ -482,6 +484,108 @@ header {
 
 .RecyclingItem {
     width: calc(33% - 16px);
+}
+
+.RecyclingImg1,
+.RecyclingImg2,
+.RecyclingImg3 {
+    width: 8vw;
+    height: 8vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.RecyclingImg1 {
+    background-image: url(../images/factory.svg);
+}
+
+.RecyclingImg2 {
+    background-image: url(../images/mining.svg);
+}
+
+.RecyclingImg3 {
+    background-image: url(../images/dump.svg);
+}
+
+.recyclingGlassBox {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 90px 90px;
+    background-color: rgb(1, 91, 201, 70%);
+    background-image: url(../images/glass_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.recyclingGlassBoxCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recyclingGlassItem {
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(33% - 16px);
+    border-radius: 20px 20px 0 20px;
+    background-color: white;
+    color: #0056b3;
+}
+
+.recyclingGlassItem :first-child {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.startingContainer {
+    color: white;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.startingContainerHeading {
+    width: 100%;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.startingContainer div {
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    width: calc(33% - 16px);
+}
+
+.startingContainer div :first-child {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.sorting {
+    background-color: #0056b3;
+    color: white;
+}
+
+.sorting li {
+    position: relative;
+}
+
+.sorting ul li::before {
+    position: absolute;
+    top: 4px;
+    left: -16px;
+    content: ' ';
+    width: 8px;
+    height: 8px;
+    background-color: white;
+}
+
+.sorting p {
+    margin-bottom: 16px;
 }
 
 footer {
