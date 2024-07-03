@@ -441,18 +441,21 @@ header {
 }
 
 .natureBox li,
-.ecologyBox li {
+.ecologyBox li,
+.hrBoxItem li {
     position: relative
 }
 
 .natureBox li+li,
 .ecologyBox ul li+li,
-.sorting li {
+.sorting li,
+.hrBoxItem li+li {
     margin-top: 16px;
 }
 
 .natureBox li::before,
-.ecologyBox ul li::before {
+.ecologyBox ul li::before,
+.hrBoxItem li::before {
     position: absolute;
     top: 4px;
     left: -16px;
@@ -579,6 +582,32 @@ header {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 16px;
+}
+
+.hrBox {
+    display: flex;
+}
+
+.hrBoxItem {
+    width: 50%;
+}
+
+.hrBoxItem:first-of-type {
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+
+.hrBoxItem p+p {
+    margin-top: 16px;
+}
+
+.hrBoxItem ul {
+    margin-top: 16px;
+}
+
+.hrBoxItem img {
+    width: 100%;
+    height: auto;
 }
 
 .sorting {

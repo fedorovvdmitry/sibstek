@@ -136,7 +136,8 @@
     .manufactureBox div:nth-last-child(-n+3),
     .RecyclingItem,
     .recyclingGlassItem,
-    .startingContainer div {
+    .startingContainer div,
+    .hrBoxItem {
         width: 100%;
     }
 
@@ -150,4 +151,14 @@
         width: 20vw;
         height: 20vw;
     }
+
+    .hrBox {
+        flex-direction: column;
+    }
+
+    .hrBoxItem:first-of-type {
+        padding-right: 0;
+        margin-bottom: 32px;
+    }
+
 }
