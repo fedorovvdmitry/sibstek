@@ -12,6 +12,10 @@ b {
     font-weight: 700;
 }
 
+p {
+    line-height: 28px;
+}
+
 h3 {
     font-size: 25px;
     font-weight: 700;
@@ -28,8 +32,8 @@ header {
     align-items: center;
     text-decoration: none;
     width: 100%;
-    padding: 0 90px;
-    background-color: white;
+    padding: 0 120px;
+    background-color: #f9f9f9;
     z-index: 10;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
@@ -56,27 +60,12 @@ header {
     width: 150px;
 }
 
-.presentation {
-    position: relative;
-    display: flex;
-    align-items: center;
+.vk_link {
+    text-decoration: none;
 }
 
-.pdfIcon {
-    height: 40px;
-    width: 40px;
-    background-image: url(../images/icon_file.svg);
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: center;
-}
-
-.presentation a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.vk_link:hover {
+    text-decoration: solid underline 1px;
 }
 
 .popupMenu {
@@ -92,26 +81,36 @@ header {
 
 .popupMenu ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    margin-left: 16px;
 }
 
 .popupMenu li {
     margin-bottom: 10px;
+    position: relative;
+}
+
+.popupMenu li::before {
+    position: absolute;
+    top: 7px;
+    left: -16px;
+    content: ' ';
+    width: 8px;
+    height: .5px;
+    background-color: #0074e8;
 }
 
 .popupMenu a {
     text-decoration: none;
-    color: #333;
+    color: #0056b3;
     font-size: 16px;
 }
 
 .popupMenu a:hover {
-    color: #007bff;
+    text-decoration: solid underline 1px;
 }
 
 .menuButton {
-    background-color: #007bff;
+    background-color: #0056b3;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -133,7 +132,7 @@ header {
     width: 100%;
     box-sizing: border-box;
     background-color: #eaf0f9;
-    padding: 32px 90px;
+    padding: 32px 120px;
 }
 
 .notification a {
@@ -170,7 +169,7 @@ header {
 
 .aboutCoverItem {
     box-sizing: border-box;
-    padding: 32px 90px;
+    padding: 32px 120px;
     width: 50%;
     display: flex;
     align-items: center;
@@ -178,7 +177,7 @@ header {
 
 .aboutCoverItemP {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 32px;
 }
 
@@ -202,7 +201,7 @@ header {
 
 .header-with-blue-line {
     box-sizing: border-box;
-    margin: 32px 90px 0;
+    margin: 32px 120px 0;
 }
 
 .heading {
@@ -221,7 +220,7 @@ header {
 
 .historyContaner {
     box-sizing: border-box;
-    padding: 32px 90px;
+    padding: 32px 120px;
     display: flex;
 }
 
@@ -261,21 +260,57 @@ header {
     box-sizing: border-box;
     width: 50%;
     overflow: hidden;
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 .historyPhoto img {
-    width: 100%;
+    height: min-content;
+    width: 48%;
 }
 
-.historyPhoto img+img {
-    margin-top: 32px;
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    padding: 0 4px;
+    color: #0056b3;
+    background-color: #eaf0f9;
+    border-radius: 4px;
+    border: 2px solid #0057b377;
+}
+
+.tooltip:hover {
+    border: 2px solid #0057b3;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    max-width: 800px;
+    width: max-content;
+    white-space: normal;
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 4px 10px 4px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
 }
 
 .aboutCompanyBox {
     width: 100%;
     box-sizing: border-box;
-    padding: 32px 90px;
+    padding: 32px 120px;
     display: flex;
 }
 
@@ -344,7 +379,7 @@ header {
 .associationsBox {
     width: 100%;
     box-sizing: border-box;
-    padding: 32px 90px;
+    padding: 32px 120px;
 }
 
 .associationsBox .associationsItems+.associationsItems {
@@ -382,7 +417,7 @@ header {
 .manufactureBox {
     width: 100%;
     box-sizing: border-box;
-    padding: 32px 90px;
+    padding: 32px 120px;
     display: flex;
 }
 
@@ -432,7 +467,7 @@ header {
 .sorting {
     width: 100%;
     box-sizing: border-box;
-    padding: 32px 90px;
+    padding: 32px 120px;
 }
 
 .natureBox ul,
@@ -635,21 +670,35 @@ header {
 
 footer {
     box-sizing: border-box;
-    padding: 32px 90px;
+    padding: 40px 90px;
     margin-top: 106px;
-    background: #2c3649;
+    background: #f9f9f9;
     color: #969ba5;
 }
 
-.footerContent :first-child {
-    color: white;
+.footerContent_top {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 28px;
+}
+
+.footerContent_top p {
+    width: calc(33% - 16px);
+}
+
+.footerContent_bottom {
+    border-top: 1px solid rgba(153, 179, 216, .2);
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer a {
     text-decoration: none;
-    color: #969ba5;
+    color: black;
 }
 
 footer a:hover {
-    color: white;
+    color: #7d7d7d;
 }

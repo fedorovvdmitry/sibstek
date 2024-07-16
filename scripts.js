@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var menuButton = document.getElementById('menuButton');
-    var popupMenu = document.getElementById('popupMenu');
+    let menuButton = document.getElementById('menuButton');
+    let popupMenu = document.getElementById('popupMenu');
     
     menuButton.addEventListener('click', function() {
-        var computedStyle = window.getComputedStyle(popupMenu);
-        var displayStyle = computedStyle.getPropertyValue('display');
+        let computedStyle = window.getComputedStyle(popupMenu);
+        let displayStyle = computedStyle.getPropertyValue('display');
         
         if (displayStyle === 'block') {
             popupMenu.style.display = 'none';
