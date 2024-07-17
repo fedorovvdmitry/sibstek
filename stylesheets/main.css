@@ -289,7 +289,8 @@ header {
     margin-top: 16px;
 }
 
-.historyContaner p+p {
+.historyContaner p+p,
+.manufactureBoxText p+p {
     margin-top: 16px;
 }
 
@@ -481,6 +482,12 @@ header {
 .manufactureBox {
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.manufactureCard:nth-child(2) {
+    width: 100%;
+    background-color: #EBECEC;
+    color: black;
 }
 
 .manufactureCard {
