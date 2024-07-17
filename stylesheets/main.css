@@ -245,6 +245,10 @@ header {
     border-bottom: 2px solid #0074e8;
 }
 
+.historyContaner+.historyContaner {
+    padding: 0 120px 32px;
+}
+
 .historyContaner ul {
     margin-bottom: 32px;
 }
