@@ -265,6 +265,10 @@ header {
     box-sizing: border-box;
 }
 
+.historyContent h3 {
+    margin: 0 0 16px;
+}
+
 .historyContaner li {
     position: relative
 }
