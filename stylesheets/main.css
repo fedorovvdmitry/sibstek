@@ -245,9 +245,7 @@ header {
     border-bottom: 2px solid #0074e8;
 }
 
-.historyContaner+.historyContaner {
-    padding: 0 120px 32px;
-}
+
 
 .historyContaner ul {
     margin-bottom: 32px;
@@ -257,6 +255,10 @@ header {
     box-sizing: border-box;
     padding: 32px 120px;
     display: flex;
+}
+
+.historyContaner+.historyContaner {
+    padding: 0 120px 32px;
 }
 
 .historyContent {
@@ -270,7 +272,7 @@ header {
 }
 
 .historyContaner li {
-    position: relative
+    position: relative;
 }
 
 .historyContaner li::before {
@@ -298,15 +300,18 @@ header {
 .historyPhoto {
     box-sizing: border-box;
     width: 50%;
-    overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-content: flex-start;
 }
 
 .historyPhoto img {
-    height: min-content;
     width: 48%;
+    height: min-content;
+    margin-bottom: 20px;
 }
+
 
 .tooltip {
     position: relative;
