@@ -12,7 +12,8 @@ b {
     font-weight: 700;
 }
 
-p {
+p, 
+li {
     line-height: 28px;
 }
 
@@ -58,6 +59,20 @@ header {
 .headerlogoSibstek {
     background-image: url(../images/logo-sibirskoe-steklo.png);
     width: 150px;
+}
+
+.vk_bottom {
+    display: inline-flex;
+    align-items: center;
+}
+
+.vk_logo {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/VK_logo.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 8px;
 }
 
 .vk_link {
@@ -128,11 +143,14 @@ header {
 }
 
 .notification {
-    margin-top: 80px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
     width: 100%;
     box-sizing: border-box;
     background-color: #eaf0f9;
     padding: 32px 120px;
+    z-index: 1000;
 }
 
 .notification a {
@@ -149,10 +167,23 @@ header {
 
 .notificationText {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
 }
 
 .aboutCover {
+    margin-top: 80px;
     width: 100%;
     height: 70vh;
     box-sizing: border-box;
@@ -236,7 +267,7 @@ header {
 
 .historyContaner li::before {
     position: absolute;
-    top: 4px;
+    top: 9px;
     left: -16px;
     content: ' ';
     width: 8px;
@@ -352,7 +383,7 @@ header {
 
 .aboutCompanyItem li::before {
     position: absolute;
-    top: 4px;
+    top: 9px;
     left: -16px;
     content: ' ';
     width: 8px;
@@ -463,8 +494,8 @@ header {
 .natureBox,
 .ecologyBox,
 .hrBox,
-.recognitionBox,
-.sorting {
+.sorting,
+.recognitionBox {
     width: 100%;
     box-sizing: border-box;
     padding: 32px 120px;
@@ -477,22 +508,25 @@ header {
 
 .natureBox li,
 .ecologyBox li,
-.hrBoxItem li {
+.hrBoxItem li,
+.recognitionBoxItem li {
     position: relative
 }
 
 .natureBox li+li,
 .ecologyBox ul li+li,
 .sorting li,
-.hrBoxItem li+li {
+.hrBoxItem li+li,
+.recognitionBoxItem li+li {
     margin-top: 16px;
 }
 
 .natureBox li::before,
 .ecologyBox ul li::before,
-.hrBoxItem li::before {
+.hrBoxItem li::before,
+.recognitionBoxItem li::before {
     position: absolute;
-    top: 4px;
+    top: 9px;
     left: -16px;
     content: ' ';
     width: 8px;
@@ -619,11 +653,13 @@ header {
     margin-bottom: 16px;
 }
 
-.hrBox {
+.hrBox,
+.recognitionBox {
     display: flex;
 }
 
-.hrBoxItem {
+.hrBoxItem,
+.recognitionBoxItem {
     width: 50%;
 }
 
@@ -640,7 +676,8 @@ header {
     margin-top: 16px;
 }
 
-.hrBoxItem img {
+.hrBoxItem img,
+.recognitionBoxItem img {
     width: 100%;
     height: auto;
 }

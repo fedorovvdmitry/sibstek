@@ -18,4 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
             popupMenu.style.display = 'none';
         }
     });
+    
 });
+
+function closeNotification() {
+    document.querySelector('.notification').style.display = 'none';
+}

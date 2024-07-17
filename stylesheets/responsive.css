@@ -26,19 +26,15 @@
         padding: 0 20px;
     }
 
+    .vk_bottom {
+        display: none;
+    }
+
     .popupMenu {
         box-sizing: border-box;
         width: 100%;
         top: 80px;
         right: 0;
-    }
-
-    .presentation {
-        display: none;
-    }
-
-    .presentation p {
-        width: min-content;
     }
 
     .notification {
@@ -73,6 +69,10 @@
         margin: 32px 20px 0;
     }
 
+    .historyContent {
+        padding-right: 0;
+    }
+
     .historyContaner {
         padding: 32px 20px;
         flex-direction: column;
@@ -83,7 +83,8 @@
     .aboutCompanyItem ul,
     .natureBox ul,
     .ecologyBox ul,
-    .sorting ul {
+    .sorting ul,
+    .hrBoxItem ul{
         margin-left: 16px;
     }
 
@@ -109,6 +110,7 @@
     }
 
     .historyPhoto img {
+        width: 100%;
         height: auto;
     }
 
@@ -189,5 +191,8 @@
         margin-bottom: 32px;
     }
 
-    
+    footer {
+        margin-top: 40px;
+
+    }    
 }
