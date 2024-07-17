@@ -577,6 +577,26 @@ header {
 
 .RecyclingItem {
     width: calc(33% - 16px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 25px;
+}
+
+.RecyclingItem::before {
+    position: absolute;
+    left: -25px;
+    content: ' ';
+    width: 16px;
+    height: 45px;
+    opacity: 30%;
+    background: url('../images/vector.svg') no-repeat center center;
+    background-size: contain;
+}
+
+.RecyclingItem p {
+    width: 70%;
+    line-height: 16px;
 }
 
 .RecyclingImg1,
