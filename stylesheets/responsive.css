@@ -49,6 +49,10 @@
         font-size: 20px;
     }
     
+    .aboutCover {
+        height: auto;
+    }
+    
     .aboutCoverItem li::before {
         width: 8px;
         height: 8px;
