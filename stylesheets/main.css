@@ -663,7 +663,8 @@ header {
     width: 50%;
 }
 
-.hrBoxItem:first-of-type {
+.hrBoxItem:first-of-type,
+.recognitionBoxItem:first-of-type {
     padding-right: 32px;
     box-sizing: border-box;
 }

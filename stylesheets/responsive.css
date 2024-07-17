@@ -84,7 +84,8 @@
     .natureBox ul,
     .ecologyBox ul,
     .sorting ul,
-    .hrBoxItem ul{
+    .hrBoxItem ul,
+    .recognitionBoxItem ul {
         margin-left: 16px;
     }
 
@@ -138,7 +139,8 @@
     .hrBox,
     .recognitionBox,
     .recyclingGlassBox,
-    .sorting {
+    .sorting,
+    .recognitionBox {
         padding: 32px 20px;
     }
 
@@ -165,6 +167,7 @@
     .recyclingGlassItem,
     .startingContainer div,
     .hrBoxItem,
+    .recognitionBoxItem,
     .footerContent_top p {
         width: 100%;
     }
@@ -182,11 +185,13 @@
         height: 20vw;
     }
 
-    .hrBox {
+    .hrBox,
+    .recognitionBox {
         flex-direction: column;
     }
 
-    .hrBoxItem:first-of-type {
+    .hrBoxItem:first-of-type,
+    .recognitionBoxItem:first-of-type {
         padding-right: 0;
         margin-bottom: 32px;
     }
