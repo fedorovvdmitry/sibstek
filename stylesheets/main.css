@@ -341,7 +341,7 @@ header {
 .aboutCompanyBox {
     width: 100%;
     box-sizing: border-box;
-    padding: 32px 120px;
+    padding: 0 120px 32px;
     display: flex;
 }
 
@@ -365,12 +365,12 @@ header {
 }
 
 .aboutCompanyItem div p:first-child {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 700;
 }
 
 .aboutCompanyItem p+p {
-    margin-top: 16px;
+    margin-top: 8px;
 }
 
 .aboutCompanyItem li {
@@ -517,7 +517,8 @@ header {
 .ecologyBox ul li+li,
 .sorting li,
 .hrBoxItem li+li,
-.recognitionBoxItem li+li {
+.recognitionBoxItem li+li,
+.aboutCompanyItem li+li {
     margin-top: 16px;
 }
 

@@ -120,8 +120,12 @@
     }
     
     .aboutCompanyBox {
-        padding: 32px 20px;
-        flex-direction: column-reverse;
+        padding: 0 20px 32px;
+        flex-direction: column;
+    }
+
+    .aboutCompanyItem:first-child {
+        padding-right: 0;
     }
 
     .aboutCompanyItem:first-child,
