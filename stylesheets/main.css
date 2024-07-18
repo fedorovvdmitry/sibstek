@@ -107,7 +107,7 @@ header {
     margin-top: 10px;
 }
 
-.popupMenu li::before {
+/* .popupMenu li::before {
     position: absolute;
     top: 13px;
     left: -16px;
@@ -115,7 +115,7 @@ header {
     width: 8px;
     height: .5px;
     background-color: #0074e8;
-}
+} */
 
 .popupMenu a {
     text-decoration: none;
