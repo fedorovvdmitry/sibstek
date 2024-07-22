@@ -11,13 +11,54 @@
 }
 
 @media screen and (max-width: 1024px) and (min-width: 767px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .tooltip::after {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        padding: 16px 20px;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
 }
 
 @media screen and (max-width: 768px) and (min-width: 415px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .notification {
+        padding: 32px 20px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .aboutCoverItem {
+        padding: 32px 32px;
+    }
+    
+    .aboutCoverItemP {
+        font-size: 20px;
+    }
+
+    .aboutCoverItemBox ul {
+        margin-left: 32px;
+    }
+
     .tooltip::after {
-        max-width: 90vw; /* Ограничение ширины вьюпорта */
-        left: 5%; /* Центровка с отступом */
-        transform: translateX(0); /* Убираем смещение */
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        padding: 16px 20px;
+        box-sizing: border-box;
+        border-radius: 0;
     }
 }
 
@@ -26,15 +67,15 @@
         padding: 0 20px;
     }
 
-    .vk_bottom {
-        display: none;
-    }
-
     .popupMenu {
         box-sizing: border-box;
         width: 100%;
         top: 80px;
         right: 0;
+    }
+
+    .vk_bottom a {
+        display: none;
     }
 
     .notification {

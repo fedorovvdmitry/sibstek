@@ -12,9 +12,17 @@ b {
     font-weight: 700;
 }
 
-p, 
-li {
+p, a {
+    font-size: 16px;
     line-height: 28px;
+}
+
+li {
+    line-height: 1.4;
+}
+
+ul li {
+    margin-left: 16px;
 }
 
 h3 {
@@ -67,20 +75,16 @@ header {
 }
 
 .vk_logo {
-    width: 20px;
-    height: 20px;
-    background-image: url(../images/VK_logo.svg);
+    width: 38px;
+    height: 38px;
+    background-image: url(../images/VK_logo_1.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-right: 8px;
+    margin-left: 16px;
 }
 
-.vk_link {
-    text-decoration: none;
-}
-
-.vk_link:hover {
-    text-decoration: solid underline 1px;
+.vk_logo:hover {
+    background-image: url(../images/VK_logo_2.svg);
 }
 
 .popupMenu {
@@ -106,16 +110,6 @@ header {
 .popupMenu li+li {
     margin-top: 10px;
 }
-
-/* .popupMenu li::before {
-    position: absolute;
-    top: 13px;
-    left: -16px;
-    content: ' ';
-    width: 8px;
-    height: .5px;
-    background-color: #0074e8;
-} */
 
 .popupMenu a {
     text-decoration: none;
@@ -233,6 +227,10 @@ header {
     background-color: white;
 }
 
+.anchor {
+    scroll-margin-top: 100px;
+}
+
 .header-with-blue-line {
     box-sizing: border-box;
     margin: 32px 120px 0;
@@ -312,8 +310,9 @@ header {
 
 .historyPhoto img {
     width: 48%;
-    height: min-content;
+    height: auto;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 
 
@@ -700,6 +699,7 @@ header {
 .hrBox,
 .recognitionBox {
     display: flex;
+    position: relative;
 }
 
 .hrBoxItem,
@@ -711,6 +711,11 @@ header {
 .recognitionBoxItem:first-of-type {
     padding-right: 32px;
     box-sizing: border-box;
+}
+
+.hrBoxItem:nth-of-type(1) {
+    position: sticky;
+    top: 100px;
 }
 
 .hrBoxItem p+p {
