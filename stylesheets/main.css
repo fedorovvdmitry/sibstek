@@ -91,7 +91,7 @@ header {
     display: none;
     position: absolute;
     top: 60px;
-    right: 20px;
+    right: 60px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -100,11 +100,12 @@ header {
 
 .popupMenu ul {
     list-style-type: none;
-    margin-left: 16px;
+    margin-left: 0;
 }
 
 .popupMenu li {
     position: relative;
+    margin-left: 0;
 }
 
 .popupMenu li+li {
@@ -486,7 +487,7 @@ header {
     justify-content: space-between;
 }
 
-.manufactureCard:nth-child(2) {
+.manufactureCard:nth-child(1) {
     width: 100%;
     background-color: #EBECEC;
     color: black;
@@ -499,6 +500,17 @@ header {
     background-color: #0056b3;
     padding: 20px;
     box-sizing: border-box; 
+}
+
+.manufactureBoxImg {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 16px;
+}
+
+.manufactureBoxImg img {
+    width: calc(25% - 16px);
 }
 
 .manufactureBoxText {
@@ -517,7 +529,8 @@ header {
 .ecologyBox,
 .hrBox,
 .sorting,
-.recognitionBox {
+.recognitionBox,
+.recyclingGlassBox {
     width: 100%;
     box-sizing: border-box;
     padding: 32px 120px;
@@ -625,76 +638,36 @@ header {
 .recyclingGlassBox {
     width: 100%;
     box-sizing: border-box;
-    padding: 90px 90px;
-    background-color: rgb(1, 91, 201, 70%);
+    display: flex;
+    justify-content: space-between;
+    /* padding: 90px 90px; */
+    background-color: rgb(1, 91, 201, 80%);
     background-image: url(../images/glass_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.recyclingGlassBoxCards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .recyclingGlassItem {
     padding: 20px;
     box-sizing: border-box;
-    width: calc(33% - 16px);
-    border-radius: 20px 20px 0 20px;
-    background-color: white;
-    color: #0056b3;
-    position: relative;
+    width: calc(50% - 16px);
+    color: white;
+}
+
+.recyclingGlassItem h3 {
+    margin: 0 0 16px;
 }
 
 .recyclingGlassItem p {
     margin-bottom: 16px;
 }
 
-.recyclingGlassItem::after {
-    position: absolute;
-    bottom: 8px;
-    left: 20px;
-    content: '';
-    width: 16px;
-    height: 16px;
-    background-image: url(../images/arrow.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+.recyclingGlassItem span {
+    padding: 4px;
+    background-color: #0056b3;
+    border-radius: 4px;
 }
 
-.recyclingGlassItem :first-child {
-    font-size: 40px;
-    font-weight: 800;
-}
-
-.startingContainer {
-    color: white;
-    margin-top: 32px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.startingContainerHeading {
-    width: 100%;
-    margin: 0 20px;
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.startingContainer div {
-    padding: 20px 20px 0 20px;
-    box-sizing: border-box;
-    width: calc(33% - 16px);
-}
-
-.startingContainer div :first-child {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 16px;
-}
 
 .hrBox,
 .recognitionBox {
