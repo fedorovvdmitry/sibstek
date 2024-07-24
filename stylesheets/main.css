@@ -248,11 +248,6 @@ header {
 }
 
 
-
-.historyContaner ul {
-    margin-bottom: 32px;
-}
-
 .historyContaner {
     box-sizing: border-box;
     padding: 32px 120px;
@@ -271,6 +266,10 @@ header {
 
 .historyContent h3 {
     margin: 0 0 16px;
+}
+
+.historyContent p {
+    line-height: 1.4;
 }
 
 .historyContaner li {
@@ -296,8 +295,12 @@ header {
     margin-top: 16px;
 }
 
+.historyContaner ul {
+    margin-bottom: 16px;
+}
+
 .historyContaner p+ul {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .historyPhoto {
@@ -524,6 +527,11 @@ header {
     width: calc(33% - 16px);
 }
 
+.ecologyBox h3,
+.natureBox h3 {
+    margin: 0 0 16px;
+}
+
 .natureBoxCards {
     display: flex;
     justify-content: space-between;
@@ -593,10 +601,6 @@ header {
     margin-bottom: 32px;
 }
 
-.RecyclingImg1 {
-    background-image: url(../images/);
-}
-
 .ecologyBoxRecyclingCards {
     display: flex;
     justify-content: space-between;
@@ -662,6 +666,27 @@ header {
     background-repeat: no-repeat;
 }
 
+.recyclingGlassItem:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.recyclingGlassItem:nth-of-type(1) h3 {
+    margin-left: 20px;
+}
+
+.recyclingGlassItem:nth-of-type(1) h3::before {
+    position: absolute;
+    top: 6px;
+    left: -32px;
+    content: ' ';
+    width: 15px;
+    height: 15px;
+    background-color: white;
+}
+
 .recyclingGlassItem {
     padding: 20px;
     box-sizing: border-box;
@@ -671,6 +696,7 @@ header {
 
 .recyclingGlassItem h3 {
     margin: 0 0 16px;
+    position: relative;
 }
 
 .recyclingGlassItem p {
@@ -738,11 +764,6 @@ header {
     box-sizing: border-box;
 }
 
-.hrBoxItem:nth-of-type(1) {
-    position: sticky;
-    top: 100px;
-}
-
 .hrBoxItem p+p {
     margin-top: 16px;
 }
@@ -786,6 +807,16 @@ footer {
     margin-top: 106px;
     background: #f6f6f6;
     color: #969ba5;
+}
+
+footer p, a { 
+    line-height: 1.4;
+}
+
+footer p:nth-of-type(2),
+footer p:nth-of-type(3),
+footer p:nth-of-type(4) { 
+    width: max-content;
 }
 
 .footerContent_top {

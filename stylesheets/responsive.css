@@ -203,7 +203,9 @@
     .natureBoxCards,
     .weightBox,
     .startingContainer,
-    .footerContent_top {
+    .footerContent_top,
+    .hrBox,
+    .recognitionBox {
         flex-direction: column;
     }
 
@@ -230,7 +232,8 @@
 
     .RecyclingItem + .RecyclingItem,
     .footerContent_top p+p,
-    .footerContent_top a {
+    .footerContent_top a,
+    .manufactureBoxImg img+img {
         margin-top: 16px;
     }
 
@@ -239,11 +242,6 @@
     .RecyclingImg3 {
         width: 20vw;
         height: 20vw;
-    }
-
-    .hrBox,
-    .recognitionBox {
-        flex-direction: column;
     }
 
     .hrBoxItem:first-of-type,
