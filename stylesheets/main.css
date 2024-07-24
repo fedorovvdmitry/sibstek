@@ -683,6 +683,43 @@ header {
     border-radius: 4px;
 }
 
+.weightBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.weightItem {
+    flex: 1;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.weightItem p {
+    width: max-content;
+}
+
+.weightItem:nth-child(2)::after,
+.weightItem:nth-child(3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 15%;
+    bottom: 15%;
+    width: 2px;
+    background-color: #0074e8;
+}
+
+.weightBox img {
+    width: 15%;
+    height: auto;
+    margin-left: 16px;
+}
+
 
 .hrBox,
 .recognitionBox {
