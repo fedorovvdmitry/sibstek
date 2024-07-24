@@ -487,12 +487,6 @@ header {
     justify-content: space-between;
 }
 
-.manufactureCard:nth-child(1) {
-    width: 100%;
-    background-color: #EBECEC;
-    color: black;
-}
-
 .manufactureCard {
     width: calc(25% - 16px);
     margin-bottom: 16px;
@@ -500,6 +494,12 @@ header {
     background-color: #0056b3;
     padding: 20px;
     box-sizing: border-box; 
+}
+
+.manufactureBox div:nth-of-type(3) {
+    width: 100% !important;
+    background-color: #EBECEC !important;
+    color: black !important;
 }
 
 .manufactureBoxImg {
@@ -522,6 +522,21 @@ header {
     background-color: #EBECEC;
     color: black;
     width: calc(33% - 16px);
+}
+
+.natureBoxCards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.natureBoxCard {
+    background-color: #EBECEC;
+    color: black;
+    width: calc(33% - 16px);
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .developmentBox,

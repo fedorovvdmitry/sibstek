@@ -196,8 +196,11 @@
     .associationsItems, 
     .managementBox,
     .manufactureBox,
+    .manufactureBoxImg,
     .ecologyBoxRecyclingCards,
+    .recyclingGlassBox,
     .recyclingGlassBoxCards,
+    .natureBoxCards,
     .startingContainer,
     .footerContent_top {
         flex-direction: column;
@@ -212,10 +215,12 @@
 
     .manufactureBox div, 
     .manufactureBox div:nth-last-child(-n+3),
+    .manufactureBoxImg img,
     .RecyclingItem,
     .recyclingGlassItem,
     .startingContainer div,
     .hrBoxItem,
+    .natureBoxCard,
     .recognitionBoxItem,
     .footerContent_top p {
         width: 100%;
