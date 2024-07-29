@@ -60,6 +60,8 @@
         box-sizing: border-box;
         border-radius: 0;
     }
+
+    
 }
 
 @media screen and (max-width: 414px) and (min-width: 320px) {
@@ -185,8 +187,13 @@
     .recognitionBox,
     .recyclingGlassBox,
     .sorting,
-    .recognitionBox {
+    .recognitionBox,
+    .tableBox {
         padding: 32px 20px;
+    }
+
+    .tableBox  {
+        overflow: scroll;
     }
 
     .historyContaner+.historyContaner {
