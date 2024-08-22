@@ -854,11 +854,21 @@ footer p:nth-of-type(4) {
     color: black;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 28px;
+    margin-bottom: 28px;
 }
 
 .footerContent_top p {
     width: calc(33% - 16px);
+}
+
+.footerLinks_contaner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.footerLinks_contaner a {
+    width: max-content;
 }
 
 .footerContent_bottom {
